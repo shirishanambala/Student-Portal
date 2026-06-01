@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Student Portal Login</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="login-container fade-in">
+    <h1>Student Portal Login</h1>
+
+    <!-- Role Selection -->
+    <div class="role-selection">
+      <select id="role">
+        <option value="student">Student</option>
+        <option value="faculty">Faculty</option>
+        <option value="admin">Admin</option>
+      </select>
+    </div>
+
+    <!-- Input Fields -->
+    <div class="input-group">
+      <input type="text" id="username" placeholder="Email / Username">
+    </div>
+    <div class="input-group password-group">
+      <input type="password" id="password" placeholder="Password">
+      <span class="toggle-password" id="togglePassword">👁️</span>
+    </div>
+
+    <!-- Login Button -->
+    <button id="loginBtn">Login</button>
+
+    <!-- Links -->
+    <div class="links">
+      <a href="#">Forgot Password?</a>
+      <a href="#" id="registerLink">Register</a>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+

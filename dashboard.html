@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Dashboard</title>
+</head>
+<body>
+  <h2>Welcome to Dashboard</h2>
+  <p>You are logged in!</p>
+  <button onclick="logout()">Logout</button>
+
+  <script>
+    if (!localStorage.getItem("loggedIn")) {
+      alert("Not logged in!");
+      window.location.href = "login.html";
+    }
+
+    function logout() {
+      localStorage.removeItem("loggedIn");
+      window.location.href = "login.html";
+    }
+  </script>
+</body>
+</html>
